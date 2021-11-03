@@ -24,15 +24,15 @@ function Navbar(){
     //
     // </nav>
     // <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div className="navbar bg-dark">
-    <Link class="navbar-brand" to="/">Nine-Tails</Link>
+    <div className="navbar fixed-top shadow-5-strong">
+    <Link class="navbar-brand" to="/"><h3>Nine-Tails</h3></Link>
     <ul class="nav justify-content-end navbar-right">
 
 <li class="nav-item">
-  <Link class="nav-link" to="/">Home</Link>
+  <Link class="nav-link" to="/"><h5>Home</h5></Link>
 </li>
 <li class="nav-item">
-  <Link class="nav-link" to="/about">About</Link>
+  <Link class="nav-link" to="/about"><h5>About</h5></Link>
 </li>
 
 </ul>

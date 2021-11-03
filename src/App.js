@@ -9,7 +9,7 @@ import Home from "./components/home";
 import Form from "./components/form";
 import About from "./components/about";
 import Navbar from "./components/nav-bar"
-
+ 
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
     <div className="body">
   <Router>
   <Navbar />
+
 
   <Switch>
   <Route exact path="/">
@@ -29,7 +30,9 @@ function App() {
   <About />
   </Route>
   </Switch>
+
   </Router>
+
   </div>
 )
 
