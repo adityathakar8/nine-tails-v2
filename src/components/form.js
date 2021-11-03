@@ -42,6 +42,7 @@
 // export default Form;
 import React, { useState } from "react";
 import { universities as data } from "../data/db.json";
+import {countryCode as codes} from "../data/code.json";
 import Card from "./card";
 
 function Form() {
@@ -51,12 +52,29 @@ function Form() {
     const [state, setState]= useState(false);
 
     const handleChange = (e) => {
-        setQuery(e.target.value);
+      const {name, value}= e.target;
+        setQuery({name: name, value: value});
     };
 
     const handleSubmit = () => {
+      if(query.name==="country"){
+      var tempCodes= codes.filter(code=>{
+        return query.value.toLowerCase().includes(code.Name.toLowerCase())
+      })
+      console.log(tempCodes);
+    }
+
+
         const filteredUnis = data.filter((uni) => {
-            return uni.name.toLowerCase().includes(query.toLowerCase());
+          if(query.name==="college"){
+            return uni.name.toLowerCase().includes(query.value.toLowerCase());
+          }else if(query.name==="country"){
+
+              return uni.country===tempCodes[0].Code;
+
+
+
+          }
         });
         setUnis(filteredUnis);
         setState(true);
@@ -75,13 +93,34 @@ function Form() {
 
     return (
         <div className="col d-flex justify-content-center form">
-            <div className="wrap">
+            {!state && <div className="wrap">
                 <div className="search">
                     <input
+                        name="college"
                         onChange={handleChange}
                         type="text"
                         className="searchTerm"
-                        placeholder="Enter College Name"
+                        autocomplete="off"
+                        placeholder="Search by College "
+                    />
+                    <button
+                        type="submit"
+                        className="searchButton"
+                        onClick={handleSubmit}
+                    >
+                        Go
+                    </button>
+                </div>
+                <div className="middle"><h5>OR</h5></div>
+
+                <div className="search">
+                    <input
+                        onChange={handleChange}
+                        name="country"
+                        type="text"
+                        className="searchTerm"
+                        autocomplete="off"
+                        placeholder="Search by Country"
                     />
                     <button
                         type="submit"
@@ -92,9 +131,9 @@ function Form() {
                     </button>
                 </div>
 
-            </div>
+            </div>}
 
-            {state && <div className="no-display"><h3>Currently displaying {unis.length} Universities.</h3></div>}
+            {state && <div className="no-display"><h3>Displaying {unis.length} Universities.</h3></div>}
 
             <div className="unilist">{showUnis}</div>
         </div>
