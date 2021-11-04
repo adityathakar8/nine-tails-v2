@@ -306,7 +306,7 @@ html {
     }
 
     .info {
-        top: 25%;
+        top: 20%;
         position: center;
         text-align: center;
         width: 70%;
@@ -320,6 +320,6 @@ html {
     }
 
     .about-content{
-      margin-top: 30vw;
+      margin-top: 20vw;
     }
 }
