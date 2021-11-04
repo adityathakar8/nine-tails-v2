@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
+
     return (
         // <nav class="navbar navbar-expand-lg navbar-dark ">
         //   <Link class="navbar-brand" href="#">Nine-Tails</Link>
@@ -24,6 +26,7 @@ function Navbar() {
         //
         // </nav>
         // <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
         <div className="navbar fixed-top shadow-5-strong">
             <Link className="navbar-brand" to="/">
                 <h3>Nine-Tails</h3>
