@@ -43,6 +43,8 @@ body {
     color: white;
 }
 
+
+
 /* About page */
 
 .about {
@@ -275,12 +277,15 @@ html {
     }
 
     .about-content {
+      top: 25%;
         text-align: center;
         width: 70vw;
         left: 15vw;
     }
 
     .info{
+      width: 60vw;
+      left: 40vw;
       line-height: 1.5;
       font-size: 25px;
     }
@@ -301,15 +306,20 @@ html {
     }
 
     .info {
-      position: center;
+        top: 25%;
+        position: center;
         text-align: center;
         width: 70%;
         left: 10vw;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1.23;
     }
 
     .about-content p {
         font-size: 18px;
+    }
+
+    .about-content{
+      margin-top: 30vw;
     }
 }

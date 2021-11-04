@@ -31,12 +31,12 @@ function Navbar() {
             <ul className="nav justify-content-end navbar-right">
                 <li className="nav-item">
                     <Link className="nav-link" to="/">
-                        <h5>Home</h5>
+                        <h5><i class="fas fa-home"></i></h5>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/about">
-                        <h5>About</h5>
+                        <h5><i class="fas fa-question"></i></h5>
                     </Link>
                 </li>
             </ul>
