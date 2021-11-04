@@ -29,12 +29,14 @@ function Navbar() {
                 <h3>Nine-Tails</h3>
             </Link>
             <ul className="nav justify-content-end navbar-right">
-                <li className="nav-item">
-                    <Link className="nav-link" to="/">
-                        <h5><i class="fas fa-home"></i></h5>
+
+
+                <li className="nav-item items">
+                    <Link className="nav-link" to="/form">
+                        <h5><i class="fas fa-search"></i></h5>
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item items">
                     <Link className="nav-link" to="/about">
                         <h5><i class="fas fa-question"></i></h5>
                     </Link>
