@@ -9,10 +9,10 @@ function Home() {
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        magna aliqua.{" "}
                     </p>
                     <Link className="button-class" to="/form">
-                        <button type="button" class="btn btn-info   bg-grey">
+                        <button type="button" class="btn btn-info bg-grey">
                             Get Started
                         </button>
                     </Link>

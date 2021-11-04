@@ -81,23 +81,20 @@ body {
     width: 100vw;
     position: relative;
     background-size: cover;
-    /* overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: auto; */
     background-position: 50% 50%;
-
 }
 
 .info {
-    line-height:1.24;
+  font-size: 35px;
+  margin: 30px;
+  margin-top: 60px;
+    line-height:1.5;
     color: white;
     width: 40%;
     position: absolute;
     left: 50%;
     top: 10%;
     padding: 5%;
-    margin: 50px 10px;
-    font-size: 40px;
 }
 
 /* Form Page contents */
@@ -252,6 +249,21 @@ html {
     background: transparent; /* make scrollbar transparent */
 }
 
+
+@media only screen and (max-width: 1020px) {
+  .about-content {
+    width: 70%;
+    left: 10vw;
+     font-size: 20px;
+     line-height: 1.5;
+  }
+
+    .info{
+      line-height: 1.5;
+      font-size: 25px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .unilist {
         grid-template-columns: 1fr 1fr 1fr;
@@ -268,15 +280,13 @@ html {
         left: 15vw;
     }
 
-    .info p{
-      text-align: left;
-
+    .info{
+      line-height: 1.5;
       font-size: 25px;
-
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 541px) {
     .unilist {
         grid-template-columns: 1fr;
     }
@@ -288,14 +298,15 @@ html {
 
     .home {
         display: flex;
-        font-size:
     }
 
     .info {
-        text-align: left;
+      position: center;
+        text-align: center;
         width: 70%;
-        left: 15vw;
-        font-size: 15px;
+        left: 10vw;
+        font-size: 25px;
+        line-height: 1.23;
     }
 
     .about-content p {
