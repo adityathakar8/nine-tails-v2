@@ -36,12 +36,12 @@ function Navbar() {
 
                 <li className="nav-item items">
                     <Link className="nav-link" to="/form">
-                        <h5><i class="fas fa-search"></i></h5>
+                        <h5><i className="fas fa-search"></i></h5>
                     </Link>
                 </li>
                 <li className="nav-item items">
                     <Link className="nav-link" to="/about">
-                        <h5><i class="fas fa-question"></i></h5>
+                        <h5><i className="fas fa-question"></i></h5>
                     </Link>
                 </li>
             </ul>

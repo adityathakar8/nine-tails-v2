@@ -4,6 +4,7 @@ import Home from "./components/home";
 import Form from "./components/form";
 import About from "./components/about";
 import Navbar from "./components/nav-bar";
+import UniPage from "./components/uni-page";
 
 function App() {
     return (
@@ -20,6 +21,9 @@ function App() {
                     </Route>
                     <Route exact path="/about">
                         <About />
+                    </Route>
+                    <Route exact path="/uni-page">
+                        <UniPage />
                     </Route>
                 </Switch>
             </Router>

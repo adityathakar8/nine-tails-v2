@@ -94,9 +94,10 @@ function Form() {
           setState(true);
       };
 
-    const showUnis = unis.map((uni) => {
+    const showUnis = unis.map((uni,index) => {
         return (
             <Card
+                key={index}
                 className="unicard"
                 name={uni.name}
                 country={uni.country}

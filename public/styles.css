@@ -206,7 +206,7 @@ body {
     background: transparent;
 
     max-width: 200px;
-    max-height: 275px;
+    max-height: 250px;
 }
 .card-link {
     color: white;
@@ -222,6 +222,12 @@ body {
 
 .card-title {
     color: white;
+}
+
+.card-button{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
 }
 /*List of universities */
 .unilist {
@@ -324,4 +330,20 @@ html {
     }
 
 
+}
+/* uni-page contents */
+
+
+.uni-page-contents{
+
+  position: absolute;
+  top: 20%;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.uni-page-elements{
+  margin: 20px;
+  text-decoration: none;
 }
